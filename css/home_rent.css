@@ -172,11 +172,14 @@ table {
 }
 
 .product-area{
-    width: 95%;
+    width: 85%;
     float: left;
     display: inline-block;
     padding: 30px;
     padding-left: 50px;
+    margin-left: 80px;
+    margin-top: 40px;
+    background-color: rgb(194, 241, 194);
 
 }
 
@@ -199,6 +202,8 @@ table {
 }
 
 .product-area .col-3 img{
+    background-color: rgb(194, 241, 194);
+    color: rgb(194, 241, 194);
     width: 100%;
 }
 
@@ -213,7 +218,10 @@ table {
 .product-area caption{
     padding: 10px 0;
 }
-.product-area a h1{
+.product-area a h2{
+    margin-top: 5px;
+    color: black;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -228,8 +236,8 @@ table {
 .product-area a .price{
     font-size: 15px;
     font-weight: 700;
-    color:  lightgreen;
-    background-color: white;
+    color:  rgb(14, 185, 80);
+    background-color: rgb(194, 241, 194);
     border: none;
     padding: 10px 25px;
     border-radius: 4px;
@@ -242,10 +250,11 @@ table {
     font-weight: 600;
     color: white;
     visibility: hidden;
-    background-color:lightgreen;
+    background-color:rgb(51, 182, 51);
     border:none;
-    width: 50%;
-    margin-left: 70px;
+    width: 60%;
+    margin-top:10px;
+    margin-left: 50px;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
