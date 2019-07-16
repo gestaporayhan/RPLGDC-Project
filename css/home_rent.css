@@ -287,7 +287,6 @@ table {
     font-size: 18px;
     font-weight: 600;
     color: white;
-    visibility: hidden;
     background-color:rgb(51, 182, 51);
     border:none;
     width: 60%;
@@ -298,7 +297,80 @@ table {
     cursor: pointer;
 }
 
-.product-area a:hover .productViewBtn{
-    visibility: visible;
-    
+/* Popular brands */
+.popularBrands{
+    width: 90%;
+    display: inner-block;
+    float: left;
+    padding: 15px 0;
+    margin-left: 90px;
+}
+
+.popularBrands h3{
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom:20px;
+}
+
+.popularBrands a{
+    display: inner-block;
+    padding: 15px 24px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #e2e2e2;
+}
+/* Popular brands end */
+
+.popularProducts{
+    margin-top: 20px;
+    width: 90%;
+    display: inline-block;
+    float: left;
+    padding:15px 0;
+    margin-left: 85px;
+}
+
+.popularProducts h3{
+    font-size: 18px;
+    columns: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.owl-carousel .owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span{
+    width: 45px;
+    height: 45px;
+    font-size: 48px;
+    background-color: #ffa800;
+    line-height: 35px;
+    display: inline-block;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: -20px;
+    position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    right: -20px;
+    position: absolute;
 }
