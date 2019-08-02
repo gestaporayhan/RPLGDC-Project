@@ -44,7 +44,7 @@
         
                     <div class = "headerright">
                         <ul>
-                            <li><a href = "#" placeholder = "Cart" style ="font-size: 20px;"><i class ="fas fa-cart-plus"></i></a></li>
+                            <li><a href = "checkout_page.html" placeholder = "Cart" style ="font-size: 20px;"><i class ="fas fa-cart-plus"></i></a></li>
                             <li><a href = "#" placeholder = "Notifications" style ="font-size: 20px;"><i class = "fas fa-bell"></i></a></li>
                             <li><a href = "#" placeholder = "Messages" style ="font-size: 20px;"><i class = "fas fa-envelope-square"></i></a></li>
                             <li><a href = "profile.html" placeholder = "User"><i class = "fas fa-user"></i>Ayuba Jobz</a></li>
@@ -256,16 +256,13 @@
                 </div>
             </div>
         </div>
+        
     </div>
     
-        <script src = "js/jquery-3.4.1.min.js"></script>
-        <script src = "js/jquery.cycle.js"></script>
-        <script src = "js/owl.carousel.min.js"></script>
+        
+    <script src = "js/jquery-3.4.1.min.js"></script>    
+    <script src = "js/owl.carousel.min.js"></script>
         <script>
-            $("#sliderShuffle").cycle({
-                next: '#next',
-                prev: '#prev'
-            });
             
             $('.owl-carousel').owlCarousel({
                 items:4,
@@ -290,41 +287,6 @@
                     }
                 }
         
-            });
-        
-            $(function(){
-                $(".topbar ul li").click(function(){
-                    $(".topbar ul li").not(this).find("ul").slideUp();
-                    $(this).find("ul").slideToggle();
-                });
-                $(".topbar ul li ul li, productCategories ul li .megamenu").click(function(e){
-                    e.stopPropagation();	
-                });
-                $(".productCategories ul li").click(function(){
-                    $(".productCategories ul li").not(this).find(".megamenu").hide();
-                    $(this).find(".megamenu").toggle();
-                });
-                $(".otherInfoBody").hide();
-                $(".otherInfoHandle").click(function(){
-                    $(".otherInfoBody").slideToggle();
-                });
-                $(".signBtn").click(function(){
-                    $("body").css("overflow", "hidden");
-                    $(".loginBox").slideDown();
-                });
-                $(".closeBtn").click(function(){
-                    $("body").css("overflow", "visible");
-                    $(".loginBox").slideUp();
-                });
-                $(".productViewBtn").click(function(e){
-                    e.preventDefault();
-                    $("body").css("overflow", "hidden");
-                    $(".productViewBox").slideDown();
-                });
-                $(".productViewBox-closeBtn").click(function(){
-                    $("body").css("overflow", "visible");
-                    $(".productViewBox").slideUp();
-                });
             });
         </script>
 </body>
