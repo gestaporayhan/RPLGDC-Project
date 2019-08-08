@@ -186,10 +186,38 @@ table {
     font-size: 20px;
     font-weight: 600;
     color: #242524;
-    border-bottom: 5px solid #A8B5A9;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
     letter-spacing: 0.5mm;
+    cursor: default;
+}
+
+.checkout h4{
+    font-size: 18px;
+    margin-left: 35px;
+    cursor: default;
+}
+
+.checkout button{
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.checkout .defaultBtn{
+    background-color: rgb(177, 236, 187);
+    color: rgb(27, 190, 62);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.checkout .editBtn{
+    margin-top: 15px;
+    border: none;
+    color: rgb(57, 214, 91);
+    background-color:#E6FFEA;
+    
 }
 
 .checkout-inner{
@@ -240,10 +268,12 @@ table {
 .container-check{
   display: block;
   position: relative;
+  padding-top: 20px;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
+  
 }
 
 .container-check input{
@@ -253,64 +283,6 @@ table {
     height: 0;
     width: 0;
 }
-
-.checkmark{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    margin: 55px 5px 0 15px;
-    background-color: #eee;
-}
-
-.container-check:hover input ~ .checkmark{
-    background-color: #ccc;
-}
-
-.container-check input:checked ~ .checkmark{
-    background-color: #5EDE6F;
-}
-
-.checkmark:after{
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.container-check input:checked~.checkmark:after{
-    display: block;
-}
-
-.container-check .checkmark:after{
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-/* .submitorder-button{
-    width: 300px;
-    height: 50px;
-    margin: 15px;
-    border-radius: 4px;
-    float: right;
-    font-size: 22px;
-    color: #fff;
-    border:none;
-    font-weight: 600;
-    background-color: #ffa800;
-} */
-
-/* End of Checkbox controls */
-
-/* Order List Style */
-
 
 .orderSummary{
     width: 25%;
@@ -362,76 +334,93 @@ table {
     cursor: pointer;
 }
 
-/* Order Summary End */
-
-.popularProducts{
-    margin-top: 20px;
+.orderSummary .rentMsg{
+    min-width: 90%;
+    max-width: 90%;
     width: 90%;
-    display: inline-block;
-    float: left;
-    padding:15px 0;
-    margin-left: 60px;
+	height: 50px;
+	border: 1px solid #A8B5A9;
+	box-sizing: border-box;
+    background-color: transparent;
+    padding: 5px 0 15px 5px;
+    margin-left: 15px;
+	margin-bottom: 15px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 12px;
 }
 
-.banner img{
-    margin: 30px 0 10px 0;
+/* Modal Start */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index :1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb (0,0,0);
+    background-color: rgb(0,0,0,0.8);
 }
 
-.banner h3{
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid #888;
+    width: 30%;
+}
+
+.modal-content h3{
+    text-align: center;
     font-size: 18px;
-    columns: black;
-    text-transform: uppercase;
-    border-bottom: 1px solid #d2d2d2;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-weight: 600;
+    margin: 40px 0 0px 0;
 }
 
-/* Carousel Products */
-.popularProducts{
-    margin-top: 20px;
-    width: 96%;
-    display: inline-block;
+.modal-content h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 80px 0 10px 0;
+}
+
+.modal-content h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 80px 0 10px 0;
+    color: #A8B5A9;
+    cursor: default;
+}
+
+.modal-content .modal-inner p{
     float: left;
-    padding:15px 0;
-    margin-left: 30px;
+    width: 90%;
 }
 
-.popularProducts h3{
-    font-size: 18px;
-    columns: black;
-    text-transform: uppercase;
-    border-bottom: 1px solid #d2d2d2;
+.modal-content label{
+    cursor: pointer;
+}
+
+.submitGroup input{
+    font-size: 13px;
+    cursor: pointer;
+    width: 22%;
     padding: 10px;
-    margin-bottom: 20px;
-    font-weight: 600;
+    background-color: rgb(57, 214, 91);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: 700;
 }
 
-.owl-carousel .owl-nav{
-    position: absolute;
-    width: 100%;
-    top: 40%;
+
+.modal-inner-text input{
+    border: none;
+    width: 50%;
+    font-size: 16px;
+    border-bottom: 2px solid #A8B5A9;
+    padding: 10px;
 }
 
-.owl-carousel .owl-nav button.owl-next span,
-.owl-carousel .owl-nav button.owl-prev span{
-    width: 45px;
-    height: 45px;
-    font-size: 48px;
-    background-color: #ffa800;
-    line-height: 35px;
-    display: inline-block;
-    border-radius: 50px;
-    color: #fff;
-}
 
-.owl-carousel .owl-nav button.owl-prev{
-    left: -20px;
-    position: absolute;
-}
-
-.owl-carousel .owl-nav button.owl-next{
-    right: -20px;
-    position: absolute;
-}

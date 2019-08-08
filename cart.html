@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TEL-RENT & COMMERCE</title>
 
-    <link rel = "stylesheet" type = "text/css" href = "css/checkout_page.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/cart.css">
     <link rel = "stylesheet" type = "text/css" href = "https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel = "stylesheet" type = "text/css" href = "css/owl.carousel.min.css">
     
@@ -172,7 +172,10 @@
                         <label class = "orderSummary">
                             <h4>Renting Summary</h4>
                             <p> Total <span>Rp.2.000.000</span></p>
-                            <input type = "submit" class = "RentButton" value = "Rent Items">
+                            <a href = "checkout.html">
+                                <input type = "submit" class = "RentButton" value = "Rent Items" id = "rentBtn">
+                            </a>
+                            
                             <input type = "submit" class = "PromoButton" value = "Use Promo from Telkom Rent">
                         </label>
                             
@@ -180,8 +183,6 @@
 
                 </div>
             </div>
-
-            
 
     <script src = "js/jquery-3.4.1.min.js"></script>
     <script src = "js/owl.carousel.min.js"></script>
@@ -210,6 +211,7 @@
                 }
         
             });
+        
         </script>
 </body>
 </html>
