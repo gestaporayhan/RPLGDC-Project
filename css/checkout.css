@@ -376,7 +376,7 @@ table {
 .modal-content h3{
     text-align: center;
     font-size: 18px;
-    margin: 40px 0 0px 0;
+    margin: 40px 0 30px 0;
 }
 
 .modal-content h4{
@@ -405,22 +405,28 @@ table {
 .submitGroup input{
     font-size: 13px;
     cursor: pointer;
-    width: 22%;
+    width: 30%;
     padding: 10px;
     background-color: rgb(57, 214, 91);
     border-radius: 6px;
     border: none;
     color: white;
     font-weight: 700;
+    margin-bottom: 80px;
 }
 
 
 .modal-inner-text input{
     border: none;
-    width: 50%;
+    width: 80%;
     font-size: 16px;
     border-bottom: 2px solid #A8B5A9;
     padding: 10px;
+}
+
+.modal-inner-text .editBtn{
+    background-color: transparent;
+    margin: 10px 0 0 -5px;
 }
 
 
