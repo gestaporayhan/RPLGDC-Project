@@ -109,7 +109,7 @@
                     <div class = "categories-mid">
                         <ul>
                             <li><h3>Best Rent</h3></li>
-                            <li><a href = "#" class = "See">See all</a></li>
+                            <li><a href = "product_view.html" class = "See">See all</a></li>
                         </ul>
                         <div class = "col-3">
                             <a href = "#">
@@ -221,6 +221,30 @@
                     </div>
                     <!-- End of Middle categories of the products -->
             </div>
+
+
+            <!-- Product View Box Start -->
+            <div class = "productViewBox">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class = "productViewBox-closeBtn"><i class = "fas fa-times"></i></div>
+                <div class = "productViewBoxImg">
+                    <img src = "img/rent_main/f23510_141_905_1.jpg">
+                </div>
+                <div class = "productViewBoxDetail">
+                    <h5><b>Price : </b>Rp.120.000</h5>
+                    <h5><b>Brand : </b>Bronco</h5>
+                    <h5><b>Owner : </b><a href = "#" style="color: #000;font-size:18px;padding-left:10px;">Lydia Saraswati</a></h5>
+                    <h5><b>Availability : </b>In Stock</h5>
+                    <h5><b>Rent Period : </b>1 Week</h5>
+                    <h5><b>Payment :</b>COD, Debit, ATM Transfer</h5>
+                    <a href="product_view.html" class = "viewProduct"><i class = " fas fa-search-plus" style="padding-right: 5px;"></i>View Product</a>
+                    <a href="#" class = "addReview"><i class = "fas fa-pen" style="padding-right: 5px;"></i>Write a Review</a>
+                    <br>
+                    <a href="cart.html" class = "rentNow"><i class = "fas fa-cart-plus" style="padding-right: 5px;"></i>Rent Now</a>
+                </div>
+            </div>
+            <!-- Product View Box End -->
+
         
         <!-- End of Main Categories -->
 
@@ -287,6 +311,17 @@
                     }
                 }
         
+            });
+
+            $(".productViewBtn").click(function(e){
+                e.preventDefault;
+                $("body").css("overflow","hidden");
+                $(".productViewBox").slideDown();
+            });
+
+            $(".productViewBox-closeBtn").click(function(){
+                $("body").css("overflow","visible");
+                $(".productViewBox").slideUp();
             });
         </script>
 </body>
